@@ -1,201 +1,181 @@
 window.seriesData = {
+    //30个颜色
     techAward: [{
         "name": "市奖",
         "itemStyle": {
-            "color": "#187a2f"
+            "color": "#f1b000"
         },
         "children": [{
             "name": "发明奖",
             "itemStyle": {
-                "color": "#5e9a80"
+                "color": "#5c0c7b"
             },
             "children": [{
                 "name": "一等",
                 "itemStyle": {
-                    "color": "#8f1c53"
+                    "color": "#7b76ac"
                 },
                 "value": 3
             }, {
                 "name": "二等",
                 "itemStyle": {
-                    "color": "#b34039"
+                    "color": "#2059a6"
                 },
                 "value": 14
             }, {
                 "name": "三等",
                 "itemStyle": {
-                    "color": "#ba9232"
+                    "color": "#669934"
                 },
                 "value": 19
             }]
         }, {
             "name": "进步奖",
             "itemStyle": {
-                "color": "#718933"
+                "color": "#346633"
             },
             "children": [{
                 "name": "一等",
                 "itemStyle": {
-                    "color": "#9ea718"
+                    "color": "#65cc66"
                 },
                 "value": 40
             }, {
                 "name": "二等",
                 "itemStyle": {
-                    "color": "#94a76f"
+                    "color": "#0099cb"
                 },
                 "value": 112
             }, {
                 "name": "三等",
                 "itemStyle": {
-                    "color": "#d0b24f"
+                    "color": "#fe6767"
                 },
                 "value": 220
             }]
         }, {
             "name": "特等",
             "itemStyle": {
-                "color": "#d78823"
+                "color": "#ffcc9a"
             },
             "value": 4
-            // "children": [{
-            //     "name": "特等",
-            //     "itemStyle": {
-            //         "color": "#d0545f"
-            //     },
-            // }]
         }]
     }, {
         "name": "国奖",
         "itemStyle": {
-            "color": "#c94930"
+            "color": "#ff6766"
         },
         "children": [{
             "name": "进步奖",
             "itemStyle": {
-                "color": "#ddaf61"
+                "color": "#cb3398"
             },
             "children": [{
                 "name": "一等",
                 "itemStyle": {
-                    "color": "#9ea718"
+                    "color": "#346633"
                 },
                 "value": 1
             }, {
                 "name": "二等",
                 "itemStyle": {
-                    "color": "#94a76f"
+                    "color": "#669934"
                 },
                 "value": 25
             }]
         }, {
             "name": "特等",
             "itemStyle": {
-                "color": "#dfbd7e"
+                "color": "#9acc99"
             },
             "value": 1
-            // "children": [{
-            //     "name": "特等",
-            //     "itemStyle": {
-            //         "color": "#d0545f"
-            //     },
-
-            // }]
         }]
     }, {
         "name": "省奖",
         "itemStyle": {
-            "color": "#ebb40f"
+            "color": "#d6e6b5"
         },
         "children": [{
             "name": "发明奖",
             "itemStyle": {
-                "color": "#d45a59"
+                "color": "#30588c"
             },
             "children": [{
                 "name": "一等",
                 "itemStyle": {
-                    "color": "#f89a80"
+                    "color": "#77c3f2"
                 },
                 "value": 1
             }, {
                 "name": "二等",
                 "itemStyle": {
-                    "color": "#f37674"
+                    "color": "#b6dbf2"
                 },
                 "value": 16
             }, {
                 "name": "三等",
                 "itemStyle": {
-                    "color": "#e75b68"
+                    "color": "#3a758c"
                 },
                 "value": 27
             }]
         }, {
             "name": "特等",
             "itemStyle": {
-                "color": "#da5c1f"
+                "color": "#17324d"
             },
             "value": 4
-
-            // "children": [{
-            //     "name": "特等",
-            //     "itemStyle": {
-            //         "color": "#d0545f"
-            //     },
-            //     "value": 4
-            // }]
         }, {
             "name": "进步奖",
             "itemStyle": {
-                "color": "#ae341f"
+                "color": "#984d54"
             },
             "children": [{
                 "name": "一等",
                 "itemStyle": {
-                    "color": "#f89a80"
+                    "color": "#d9742c"
                 },
                 "value": 20
             }, {
                 "name": "二等",
                 "itemStyle": {
-                    "color": "#f37674"
+                    "color": "#eab34f"
                 },
                 "value": 107
             }, {
                 "name": "三等",
                 "itemStyle": {
-                    "color": "#e75b68"
+                    "color": "#ffcc00"
                 },
                 "value": 181
             }]
         }, {
             "name": "自然奖",
             "itemStyle": {
-                "color": "#310d0f"
+                "color": "#cc3467"
             },
             "children": [{
                 "name": "一等",
                 "itemStyle": {
-                    "color": "#f89a80"
+                    "color": "#ff6766"
                 },
                 "value": 2
             }, {
                 "name": "二等",
                 "itemStyle": {
-                    "color": "#f37674"
+                    "color": "#669acc"
                 },
                 "value": 18
             }, {
                 "name": "三等",
                 "itemStyle": {
-                    "color": "#e75b68"
+                    "color": "#b05c1c"
                 },
                 "value": 23
             }, {
                 "name": "特等",
                 "itemStyle": {
-                    "color": "#d0545f"
+                    "color": "#65533d"
                 },
                 "value": 1
             }]
@@ -225,5 +205,87 @@ window.seriesData = {
     }, {
         "name": "先进制造与自动化",
         "value": 72
-    }]
+    }],
+    cost: {
+        x: ["2014", "2015", "2016", "2017", "2018"],
+        "专利质押项目数": [12, 13, 11, 8, 21],
+        "科学研究与技术开发计划项目数": [304, 312, 311, 131, 111, 160],
+        "科技型中小企业技术创新项目数": [72, 68, 87, 93, 99, 59],
+        "专利质押项目经费": [369, 399, 354, 196, 412],
+        "科学研究与技术开发计划项目经费": [10034, 10541, 9531, 8088, 6215, 4289],
+        "科技型中小企业技术创新项目经费": [1200, 1200, 1305, 1395, 1580, 885],
+    },
+    techCompany: [{
+        name: "农、林、牧、渔业",
+        value: 133
+    }, {
+        name: "制造业",
+        value: 213
+    }, {
+        name: "电力、热力、燃气及水生产和供应业",
+        value: 13
+    }, {
+        name: "建筑业",
+        value: 20
+    }, {
+        name: "批发和零售业",
+        value: 14
+    }, {
+        name: "交通运输、仓储和邮政业",
+        value: 5
+    }, {
+        name: "住宿和餐饮业",
+        value: 1
+    }, {
+        name: "信息传输、软件和信息技术服务业",
+        value: 272
+    }, {
+        name: "房地产业",
+        value: 1
+    }, {
+        name: "租赁和商务服务业",
+        value: 19
+    }, {
+        name: "科学研究和技术服务业",
+        value: 134
+    }, {
+        name: "水利、环境和公共设施管理业",
+        value: 23
+    }, {
+        name: "居民服务、修理和其他服务业",
+        value: 10
+    }, {
+        name: "教育",
+        value: 2
+    }, {
+        name: "卫生和社会工作",
+        value: 9
+    }, {
+        name: "文化、体育和娱乐业",
+        value: 8
+    }],
+    institution: [{
+            "value": "26",
+            "name": "农业科技平台"
+        }, {
+            "value": "12",
+            "name": "创新小镇"
+        },
+        {
+            "value": "27",
+            "name": "众创空间"
+        },
+        {
+            "value": "48",
+            "name": "孵化器、众创空间总数"
+        },
+        {
+            "value": "17",
+            "name": "国家认可实验室 CNAS"
+        },
+        {
+            "value": "449",
+            "name": "已登记科技型中小企业总数"
+        },
+    ]
 }

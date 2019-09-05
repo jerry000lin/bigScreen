@@ -173,6 +173,10 @@ body {
     height: 60%;
 }
 
+.xpanel-wrapper-67 {
+    height: 67%;
+}
+
 .xpanel-wrapper-75 {
     height: 75%;
 }
@@ -235,15 +239,16 @@ body {
     right: 0;
 }
 
-.highTechCompany-infoBanner {
+.infoBanner {
     height: 88px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     color: #fff;
+    font-size: 12px;
 }
 
-.highTechCompany-infoBanner>.info-contanier {
+.infoBanner>.info-contanier {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -252,13 +257,15 @@ body {
     margin: 10px;
 }
 
-.highTechCompany-infoBanner>.info-contanier>div {
+.infoBanner>.info-contanier>div {
     height: 34px;
     line-height: 34px;
 }
-#highTechCompany{
-    top: 132px;
+
+.info-main {
+    top: 132px !important;
 }
+
 /* PC */
 @media (max-width:1919px) {
     .xpanel .title {

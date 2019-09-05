@@ -140,3 +140,83 @@ $(function () {
         myChart.setOption(techAwardOption)
     }
 })
+
+
+let data = seriesData.sort(function (a, b) {
+    return a.value - b.value;
+})
+const sum = seriesData.reduce((value, item) => value + item.value, 0)
+const length = seriesData.length
+let gap = ~~(100 / length)
+const startRadius = 100 - gap * length
+gap = gap - 2
+series = data.map((item, index) => {
+    return {
+        name: item.name,
+        type: 'pie',
+        center: ['40%', '100%'],
+        radius: [startRadius + index * 15, startRadius + (index + 1) * 15],
+        avoidLabelOverlap: false,
+        startAngle: 180,
+        itemStyle: {
+            normal: {
+                borderColor: "transparent",
+                borderWidth: 20
+            },
+            emphasis: {
+                borderColor: "transparent",
+                borderWidth: 20
+            }
+        },
+        label: {
+            normal: {
+                show: false,
+                position: 'inside',
+                formatter: '{c*2}%'
+            }
+        },
+        labelLine: {
+            normal: {
+                show: false
+            }
+        },
+        data: [{
+                value: item.value,
+                name: item.name
+            },
+            {
+                value: sum - item.value,
+                name: '',
+                itemStyle: {
+                    normal: {
+                        color: 'transparent'
+                    },
+                    emphasis: {
+                        color: '#EFEFEF'
+                    }
+                },
+                label: {
+                    normal: {
+                        show: false
+                    }
+                }
+            }, {
+                value: sum,
+                name: '',
+                itemStyle: {
+                    normal: {
+                        color: 'transparent'
+                    },
+                    emphasis: {
+                        color: '#EFEFEF'
+                    }
+                },
+                label: {
+                    normal: {
+                        show: false
+                    }
+                }
+            }
+        ]
+    }
+})

@@ -2,6 +2,9 @@ $(function () {
     setTechAwardCharts(seriesData.techAward)
     setHighTechCompanyCharts(seriesData.highTechCompany)
     setWordCharts()
+    setCostCharts(seriesData.cost)
+    setTechCompanyCharts(seriesData.techCompany)
+    setInstitutionCharts(seriesData.institution)
 })
 
 function setTechAwardCharts(seriesData) {
@@ -17,6 +20,7 @@ function setTechAwardCharts(seriesData) {
         series: {
             type: "sunburst",
             center: ["50%", "50%"],
+            startAngle: 360,
             data: seriesData,
             sort: null,
             levels: [{}, {
@@ -66,7 +70,10 @@ function setTechAwardCharts(seriesData) {
 
 function setHighTechCompanyCharts(seriesData) {
     const myChart = echarts.init(document.getElementById("highTechCompany"))
+
     option = {
+        color: ["#05f8d6", "#0082fc", "#fdd845", "#22ed7c", "#09b0d3", "#1d27c9", "#f9e264", "#f47a75", "#009db2", "#024b51", "#0780cf", "#765005​​​​​​​"],
+
         tooltip: {
             trigger: 'item',
             formatter: "{b} : {c} ({d}%)"
@@ -76,32 +83,28 @@ function setHighTechCompanyCharts(seriesData) {
             textStyle: {
                 color: "#fff",
             },
-            orient: "vertical"
+            orient: "vertical",
+            type: "scroll",
+            pageIconColor: "#fff",
+            pageTextStyle: {
+                color: "#fff"
+            }
         },
         series: [{
             type: 'pie',
             radius: '80%',
+            startAngle: -180,
             center: ['40%', '50%'],
             data: seriesData.sort(function (a, b) {
-                return a.value - b.value;
+                return b.value - a.value;
             }),
             label: {
-                fontSize: 18,
-                normal: {
-                    textStyle: {
-                        color: '#fff'
-                    }
-                }
+                fontSize: 14
             },
             labelLine: {
-                normal: {
-                    lineStyle: {
-                        color: '#fff'
-                    },
-                    smooth: 0.2,
-                    length: 10,
-                    length2: 20
-                }
+                smooth: 0.2,
+                length: 10,
+                length2: 10
             },
             itemStyle: {
                 normal: {
@@ -130,26 +133,26 @@ function setWordCharts() {
             shape: 'diamond', //circle cardioid diamond triangle-forward triangle
             left: 0,
             right: 0,
-            top: 0,
+            top: 5,
             right: 0,
             width: '100%',
             height: '100%',
             gridSize: 10, //值越大，word间的距离越大，单位像素
             sizeRange: [20, 32], //word的字体大小区间，单位像素
-            rotationRange: [0,0], //word的可旋转角度区间
+            rotationRange: [0, 0], //word的可旋转角度区间
             textStyle: {
                 normal: {
                     color: function () {
                         return 'rgb(' + [
-                            Math.round(Math.random() * 160),
-                            Math.round(Math.random() * 160),
-                            Math.round(Math.random() * 160)
+                            100 + Math.round(Math.random() * 155),
+                            100 + Math.round(Math.random() * 155),
+                            100 + Math.round(Math.random() * 155)
                         ].join(',') + ')';
                     }
                 },
                 emphasis: {
-                    shadowBlur: 2,
-                    shadowColor: '#fff'
+                    shadowBlur: 1,
+                    color: '#eee'
                 }
             },
             data: [{
@@ -216,4 +219,210 @@ function setWordCharts() {
         }],
     };
     wordChart.setOption(wordOpt);
+}
+
+function setCostCharts(data) {
+    const costChart = echarts.init(document.getElementById("costChart"), "myTheme");
+    const costChartsOption = {
+        color: ["#05f8d6", "#0082fc", "#fdd845", "#22ed7c", "#09b0d3", "#1d27c9", "#f9e264", "#f47a75", "#009db2", "#024b51", "#0780cf", "#765005​​​​​​​"],
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        grid: {
+            top: 60,
+            bottom: 25
+        },
+        legend: {
+            textStyle: {
+                color: "#fff"
+            },
+            data: ["专利质押项目数", "科学研究与技术开发计划项目数", "科技型中小企业技术创新项目数", "专利质押项目经费", "科学研究与技术开发计划项目经费", "科技型中小企业技术创新项目经费", ],
+            type: "scroll",
+            pageIconColor: "#fff",
+            pageTextStyle: {
+                color: "#fff"
+            }
+        },
+        xAxis: [{
+            type: 'category',
+            data: data.x,
+            axisPointer: {
+                type: 'shadow'
+            },
+            nameTextStyle: {
+                color: '#fff'
+            },
+            axisLabel: {
+                color: "#fff"
+            },
+            axisLine: {
+                lineStyle: {
+                    color: "#fff"
+                }
+            },
+        }],
+        yAxis: [{
+                type: 'value',
+                name: '数量',
+                nameTextStyle: {
+                    color: '#fff'
+                },
+                axisLabel: {
+                    color: "#fff"
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: "#fff"
+                    }
+                },
+            },
+            {
+                type: 'value',
+                name: '经费(万美元)',
+                nameTextStyle: {
+                    color: '#fff'
+                },
+                axisLabel: {
+                    color: "#fff"
+                },
+                min: 100,
+                axisLine: {
+                    lineStyle: {
+                        color: '#5793f3'
+                    }
+                },
+            }
+        ],
+        series: [{
+                name: '专利质押项目数',
+                type: 'bar',
+                data: data["专利质押项目数"]
+            },
+            {
+                name: '科学研究与技术开发计划项目数',
+                type: 'bar',
+                data: data["专利质押项目数"]
+            },
+            {
+                name: '科技型中小企业技术创新项目数',
+                type: 'bar',
+                data: data["科技型中小企业技术创新项目数"]
+            },
+            {
+                name: '专利质押项目经费',
+                type: 'line',
+                yAxisIndex: 1,
+                data: data["专利质押项目经费"]
+            },
+            {
+                name: '科学研究与技术开发计划项目经费',
+                type: 'line',
+                yAxisIndex: 1,
+                data: data["科学研究与技术开发计划项目经费"]
+            },
+            {
+                name: '科技型中小企业技术创新项目经费',
+                type: 'line',
+                yAxisIndex: 1,
+                data: data["科技型中小企业技术创新项目经费"]
+            }
+        ]
+    }
+    costChart.setOption(costChartsOption);
+
+}
+
+function setTechCompanyCharts(seriesData) {
+    const myChart = echarts.init(document.getElementById("techCompany"), "myTheme")
+    option = {
+        color: ["#05f8d6", "#0082fc", "#fdd845", "#22ed7c", "#09b0d3", "#1d27c9", "#f9e264", "#f47a75", "#009db2", "#024b51", "#0780cf", "#765005​​​​​​​"],
+
+        tooltip: {
+            trigger: 'item',
+            formatter: "{b} : {c} ({d}%)"
+        },
+        legend: {
+            right: 0,
+            textStyle: {
+                color: "#fff",
+            },
+            orient: "vertical",
+            type: "scroll",
+            pageIconColor: "#fff",
+            pageTextStyle: {
+                color: "#fff"
+            }
+        },
+        series: [{
+            type: 'pie',
+            radius: '80%',
+            startAngle: -180,
+            center: ['30%', '50%'],
+            data: seriesData.sort(function (a, b) {
+                return b.value - a.value;
+            }),
+            label: {
+                show: false
+            },
+            animationType: 'scale',
+            animationEasing: 'elasticOut',
+            animationDelay: function (idx) {
+                return Math.random() * 200;
+            }
+        }]
+    };
+    myChart.setOption(option)
+
+}
+
+function setInstitutionCharts(data) {
+    const institutionCharts = echarts.init(document.getElementById("institution"));
+    const institutionOpt = {
+        backgroundColor: "transparent",
+        tooltip: {
+            trigger: 'item',
+            formatter: "{b}:{c}家"
+        },
+        series: [{
+            type: 'treemap',
+            top: '0',
+            bottom: '0',
+            left: '0',
+            right: '0',
+            roam: false, //是否开启拖拽漫游（移动和缩放）
+            nodeClick: false, //点击节点后的行为,false无反应
+            breadcrumb: {
+                show: false
+            },
+            label: { //描述了每个矩形中，文本标签的样式。
+                show: true,
+                textStyle: {
+                    color: '#fff',
+                    fontSize: 18,
+                },
+                position: ['10%', '40%'],
+                formatter: function (params) {
+                    var arr = [
+                        params.name,
+                        params.value + '家'
+                    ];
+                    return arr.join('\n');
+                }
+
+            },
+            itemStyle: {
+                borderColor: "transparent",
+                borderWidth: 2
+            },
+            data: data
+        }]
+    };
+    institutionCharts.setOption(institutionOpt);
+
 }
