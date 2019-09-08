@@ -1,410 +1,485 @@
 {
-    "state" : "success",
-    "message" : null,
-    "data" : {
-      "rd_center_gcjs" : {
-        "list" : [ {
-          "rank" : "南宁市",
-          "count" : 63
-        }, {
-          "rank" : "国家级",
-          "count" : 1
-        }, {
-          "rank" : "自治区级",
-          "count" : 114
-        } ],
-        "title" : "工程技术研究中心"
-      },
-      "rd_kjfhq" : {
-        "count" : "21",
-        "title" : "孵化器"
-      },
-      "gx_count" : {
-        "count" : "751",
-        "title" : "高新企业总数"
-      },
-      "rd_center_gjj" : {
-        "count" : "8",
-        "title" : "国家级研发平台"
-      },
-      "zx_income" : {
-        "sum" : "1418526.97",
-        "title" : "科技型中小企业销售收入"
-      },
-      "gx_export_import" : {
-        "sum" : "10401640.32",
-        "title" : "高新企业进出口总额"
-      },
-      "rd_lab_zzq" : {
-        "count" : "53",
-        "title" : "自治区重点实验室"
-      },
-      "rd_zx_project" : {
-        "list" : [ {
-          "year" : "2014",
-          "count" : 72
-        }, {
-          "year" : "2015",
-          "count" : 68
-        }, {
-          "year" : "2016",
-          "count" : 87
-        }, {
-          "year" : "2017",
-          "count" : 93
-        }, {
-          "year" : "2018",
-          "count" : 99
-        }, {
-          "year" : "2019",
-          "count" : 59
-        } ],
-        "title" : "科技型中小企业技术创新项目数"
-      },
-      "gx_profit" : {
-        "sum" : "6039490.23",
-        "title" : "高新企业利润总额"
-      },
-      "rd_patent_project" : {
-        "list" : [ {
-          "year" : "2014",
-          "count" : 12
-        }, {
-          "year" : "2015",
-          "count" : 13
-        }, {
-          "year" : "2016",
-          "count" : 11
-        }, {
-          "year" : "2017",
-          "count" : 8
-        }, {
-          "year" : "2018",
-          "count" : 21
-        } ],
-        "title" : "专利质押项目数"
-      },
-      "rd_plat_sum" : {
-        "count" : "294",
-        "title" : "科研机构总数"
-      },
-      "rd_plat_nykj" : {
-        "count" : "26",
-        "title" : "农业科技平台"
-      },
-      "rd_general_invest" : {
-        "list" : [ {
-          "year" : "2014",
-          "sum" : 10034
-        }, {
-          "year" : "2015",
-          "sum" : 10541
-        }, {
-          "year" : "2016",
-          "sum" : 9531
-        }, {
-          "year" : "2017",
-          "sum" : 8088
-        }, {
-          "year" : "2018",
-          "sum" : 6215
-        }, {
-          "year" : "2019",
-          "sum" : 4289
-        } ],
-        "title" : "科学研究与技术开发计划项目经费"
-      },
-      "gx_tax" : {
-        "sum" : "4531333.65",
-        "title" : "高新企业实际上缴税费总额"
-      },
-      "zx_profit" : {
-        "sum" : "98256.26",
-        "title" : "科技型中小企业利润总额"
-      },
-      "gx_income" : {
-        "sum" : "151029943.23",
-        "title" : "高新企业营业收入"
-      },
-      "rd_patent_invest" : {
-        "list" : [ {
-          "year" : "2014",
-          "sum" : 369
-        }, {
-          "year" : "2015",
-          "sum" : 399
-        }, {
-          "year" : "2016",
-          "sum" : 354
-        }, {
-          "year" : "2017",
-          "sum" : 196
-        }, {
-          "year" : "2018",
-          "sum" : 412
-        } ],
-        "title" : "专利质押项目经费"
-      },
-      "zx_register_by_field" : {
-        "list" : [ {
-          "field" : "A 农、林、牧、渔业",
-          "count" : 133
-        }, {
-          "field" : "C 制造业",
-          "count" : 213
-        }, {
-          "field" : "D 电力、热力、燃气及水生产和供应业",
-          "count" : 13
-        }, {
-          "field" : "E 建筑业",
-          "count" : 20
-        }, {
-          "field" : "F 批发和零售业",
-          "count" : 14
-        }, {
-          "field" : "G 交通运输、仓储和邮政业",
-          "count" : 5
-        }, {
-          "field" : "H 住宿和餐饮业",
-          "count" : 1
-        }, {
-          "field" : "I 信息传输、软件和信息技术服务业",
-          "count" : 272
-        }, {
-          "field" : "K 房地产业",
-          "count" : 1
-        }, {
-          "field" : "L 租赁和商务服务业",
-          "count" : 19
-        }, {
-          "field" : "M 科学研究和技术服务业",
-          "count" : 134
-        }, {
-          "field" : "N 水利、环境和公共设施管理业",
-          "count" : 23
-        }, {
-          "field" : "O 居民服务、修理和其他服务业",
-          "count" : 10
-        }, {
-          "field" : "P 教育",
-          "count" : 2
-        }, {
-          "field" : "Q 卫生和社会工作",
-          "count" : 9
-        }, {
-          "field" : "R 文化、体育和娱乐业",
-          "count" : 8
-        } ],
-        "title" : "已登记科技型中小企业按行业分"
-      },
-      "zx_tax" : {
-        "sum" : "161086.29",
-        "title" : "科技型中小企业纳税总额"
-      },
-      "rd_town" : {
-        "count" : "12",
-        "title" : "创新小镇"
-      },
-      "rd_zckj" : {
-        "count" : "27",
-        "title" : "众创空间"
-      },
-      "rd_incubation" : {
-        "count" : "48",
-        "title" : "孵化器、众创空间总数"
-      },
-      "rd_lab_cnas" : {
-        "count" : "17",
-        "title" : "国家认可实验室 CNAS"
-      },
-      "zx_count" : {
-        "count" : "449",
-        "title" : "已登记科技型中小企业总数"
-      },
-      "rd_zx_invest" : {
-        "list" : [ {
-          "year" : "2014",
-          "sum" : 1200
-        }, {
-          "year" : "2015",
-          "sum" : 1200
-        }, {
-          "year" : "2016",
-          "sum" : 1305
-        }, {
-          "year" : "2017",
-          "sum" : 1395
-        }, {
-          "year" : "2018",
-          "sum" : 1580
-        }, {
-          "year" : "2019",
-          "sum" : 885
-        } ],
-        "title" : "科技型中小企业技术创新项目经费"
-      },
-      "tech_award" : {
-        "list" : [ {
-          "prize_level" : "南宁市科技奖",
-          "prize_name" : "技术发明奖",
-          "prize" : "1",
-          "count" : 3
-        }, {
-          "prize_level" : "南宁市科技奖",
-          "prize_name" : "技术发明奖",
-          "prize" : "2",
-          "count" : 14
-        }, {
-          "prize_level" : "南宁市科技奖",
-          "prize_name" : "技术发明奖",
-          "prize" : "3",
-          "count" : 19
-        }, {
-          "prize_level" : "南宁市科技奖",
-          "prize_name" : "科技进步奖",
-          "prize" : "1",
-          "count" : 40
-        }, {
-          "prize_level" : "南宁市科技奖",
-          "prize_name" : "科技进步奖",
-          "prize" : "2",
-          "count" : 112
-        }, {
-          "prize_level" : "南宁市科技奖",
-          "prize_name" : "科技进步奖",
-          "prize" : "3",
-          "count" : 220
-        }, {
-          "prize_level" : "南宁市科技奖",
-          "prize_name" : "重大贡献奖",
-          "prize" : "特等",
-          "count" : 4
-        }, {
-          "prize_level" : "国家科技奖",
-          "prize_name" : "科技进步奖",
-          "prize" : "1",
-          "count" : 1
-        }, {
-          "prize_level" : "国家科技奖",
-          "prize_name" : "科技进步奖",
-          "prize" : "2",
-          "count" : 25
-        }, {
-          "prize_level" : "国家科技奖",
-          "prize_name" : "重大贡献奖",
-          "prize" : "特等",
-          "count" : 1
-        }, {
-          "prize_level" : "广西科技奖",
-          "prize_name" : "技术发明奖",
-          "prize" : "1",
-          "count" : 1
-        }, {
-          "prize_level" : "广西科技奖",
-          "prize_name" : "技术发明奖",
-          "prize" : "2",
-          "count" : 16
-        }, {
-          "prize_level" : "广西科技奖",
-          "prize_name" : "技术发明奖",
-          "prize" : "3",
-          "count" : 27
-        }, {
-          "prize_level" : "广西科技奖",
-          "prize_name" : "特别贡献奖",
-          "prize" : "特等",
-          "count" : 4
-        }, {
-          "prize_level" : "广西科技奖",
-          "prize_name" : "科技进步奖",
-          "prize" : "1",
-          "count" : 20
-        }, {
-          "prize_level" : "广西科技奖",
-          "prize_name" : "科技进步奖",
-          "prize" : "2",
-          "count" : 107
-        }, {
-          "prize_level" : "广西科技奖",
-          "prize_name" : "科技进步奖",
-          "prize" : "3",
-          "count" : 181
-        }, {
-          "prize_level" : "广西科技奖",
-          "prize_name" : "自然科学奖",
-          "prize" : "1",
-          "count" : 2
-        }, {
-          "prize_level" : "广西科技奖",
-          "prize_name" : "自然科学奖",
-          "prize" : "2",
-          "count" : 18
-        }, {
-          "prize_level" : "广西科技奖",
-          "prize_name" : "自然科学奖",
-          "prize" : "3",
-          "count" : 23
-        }, {
-          "prize_level" : "广西科技奖",
-          "prize_name" : "自然科学奖",
-          "prize" : "特等",
-          "count" : 1
-        } ],
-        "title" : "科学技术奖励数"
-      },
-      "zx_rd" : {
-        "sum" : "113070.67",
-        "title" : "科技型中小企业研发费用总额"
-      },
-      "rd_general_project" : {
-        "list" : [ {
-          "year" : "2014",
-          "count" : 304
-        }, {
-          "year" : "2015",
-          "count" : 312
-        }, {
-          "year" : "2016",
-          "count" : 311
-        }, {
-          "year" : "2017",
-          "count" : 131
-        }, {
-          "year" : "2018",
-          "count" : 111
-        }, {
-          "year" : "2019",
-          "count" : 160
-        } ],
-        "title" : "科学研究与技术开发计划项目数"
-      },
-      "gx_count_by_tech" : {
-        "list" : [ {
-          "gx_field_no" : "01.一、电子信息",
-          "count" : 244
-        }, {
-          "gx_field_no" : "02.二、生物与新医药",
-          "count" : 97
-        }, {
-          "gx_field_no" : "03.三、航空航天",
-          "count" : 3
-        }, {
-          "gx_field_no" : "04.四、新材料",
-          "count" : 54
-        }, {
-          "gx_field_no" : "05.五、高技术服务",
-          "count" : 183
-        }, {
-          "gx_field_no" : "06.六、新能源与节能",
-          "count" : 33
-        }, {
-          "gx_field_no" : "07.七、资源与环境",
-          "count" : 65
-        }, {
-          "gx_field_no" : "08.八、先进制造与自动化",
-          "count" : 72
-        } ],
-        "title" : "高新企业按高新技术领域分"
-      }
+  "state" : "success",
+  "message" : null,
+  "data" : {
+    "rd_center_gcjs" : {
+      "list" : [ {
+        "rank" : "南宁市",
+        "count" : 63
+      }, {
+        "rank" : "国家级",
+        "count" : 1
+      }, {
+        "rank" : "自治区级",
+        "count" : 114
+      } ],
+      "title" : "工程技术研究中心"
+    },
+    "rd_kjfhq" : {
+      "count" : "21",
+      "title" : "孵化器"
+    },
+    "gx_count" : {
+      "count" : "751",
+      "title" : "高新企业总数"
+    },
+    "rd_center_gjj" : {
+      "count" : "8",
+      "title" : "国家级研发平台"
+    },
+    "zx_income" : {
+      "sum" : "1418529",
+      "title" : "科技型中小企业销售收入"
+    },
+    "gx_export_import" : {
+      "sum" : "10401640.32",
+      "title" : "高新企业进出口总额"
+    },
+    "rd_lab_zzq" : {
+      "count" : "53",
+      "title" : "自治区重点实验室"
+    },
+    "rd_zx_project" : {
+      "list" : [ {
+        "year" : "2014",
+        "count" : 72
+      }, {
+        "year" : "2015",
+        "count" : 68
+      }, {
+        "year" : "2016",
+        "count" : 87
+      }, {
+        "year" : "2017",
+        "count" : 93
+      }, {
+        "year" : "2018",
+        "count" : 99
+      }, {
+        "year" : "2019",
+        "count" : 59
+      } ],
+      "title" : "科技型中小企业技术创新项目数"
+    },
+    "gx_profit" : {
+      "sum" : "6039490.23",
+      "title" : "高新企业利润总额"
+    },
+    "rd_patent_project" : {
+      "list" : [ {
+        "year" : "2014",
+        "count" : 12
+      }, {
+        "year" : "2015",
+        "count" : 13
+      }, {
+        "year" : "2016",
+        "count" : 11
+      }, {
+        "year" : "2017",
+        "count" : 8
+      }, {
+        "year" : "2018",
+        "count" : 21
+      } ],
+      "title" : "专利质押项目数"
+    },
+    "rd_plat_sum" : {
+      "count" : "294",
+      "title" : "科研机构总数"
+    },
+    "rd_plat_nykj" : {
+      "count" : "26",
+      "title" : "农业科技平台"
+    },
+    "initial_patent_per" : {
+      "count" : "9.89",
+      "title" : "2018每万人口发明专利拥有量"
+    },
+    "patent_approve_count" : {
+      "count" : "6156",
+      "title" : "2018专利授权量"
+    },
+    "rd_general_invest" : {
+      "list" : [ {
+        "year" : "2014",
+        "sum" : 10034
+      }, {
+        "year" : "2015",
+        "sum" : 10541
+      }, {
+        "year" : "2016",
+        "sum" : 9531
+      }, {
+        "year" : "2017",
+        "sum" : 8088
+      }, {
+        "year" : "2018",
+        "sum" : 6215
+      }, {
+        "year" : "2019",
+        "sum" : 4289
+      } ],
+      "title" : "科学研究与技术开发计划项目经费"
+    },
+    "gx_tax" : {
+      "sum" : "4531333.65",
+      "title" : "高新企业实际上缴税费总额"
+    },
+    "zx_profit" : {
+      "sum" : "98279",
+      "title" : "科技型中小企业利润总额"
+    },
+    "gx_income" : {
+      "sum" : "151029943.23",
+      "title" : "高新企业营业收入"
+    },
+    "initial_patent_count" : {
+      "count" : "6986",
+      "title" : "2018有效发明专利量"
+    },
+    "patent_apply_count" : {
+      "count" : "12112",
+      "title" : "2018专利申请量"
+    },
+    "rd_patent_invest" : {
+      "list" : [ {
+        "year" : "2014",
+        "sum" : 369
+      }, {
+        "year" : "2015",
+        "sum" : 399
+      }, {
+        "year" : "2016",
+        "sum" : 354
+      }, {
+        "year" : "2017",
+        "sum" : 196
+      }, {
+        "year" : "2018",
+        "sum" : 412
+      } ],
+      "title" : "专利质押项目经费"
+    },
+    "zx_register_by_field" : {
+      "list" : [ {
+        "field" : "A 农、林、牧、渔业",
+        "count" : 133
+      }, {
+        "field" : "C 制造业",
+        "count" : 213
+      }, {
+        "field" : "D 电力、热力、燃气及水生产和供应业",
+        "count" : 13
+      }, {
+        "field" : "E 建筑业",
+        "count" : 20
+      }, {
+        "field" : "F 批发和零售业",
+        "count" : 14
+      }, {
+        "field" : "G 交通运输、仓储和邮政业",
+        "count" : 5
+      }, {
+        "field" : "H 住宿和餐饮业",
+        "count" : 1
+      }, {
+        "field" : "I 信息传输、软件和信息技术服务业",
+        "count" : 272
+      }, {
+        "field" : "K 房地产业",
+        "count" : 1
+      }, {
+        "field" : "L 租赁和商务服务业",
+        "count" : 19
+      }, {
+        "field" : "M 科学研究和技术服务业",
+        "count" : 134
+      }, {
+        "field" : "N 水利、环境和公共设施管理业",
+        "count" : 23
+      }, {
+        "field" : "O 居民服务、修理和其他服务业",
+        "count" : 10
+      }, {
+        "field" : "P 教育",
+        "count" : 2
+      }, {
+        "field" : "Q 卫生和社会工作",
+        "count" : 9
+      }, {
+        "field" : "R 文化、体育和娱乐业",
+        "count" : 8
+      } ],
+      "title" : "已登记科技型中小企业按行业分"
+    },
+    "zx_tax" : {
+      "sum" : "161088",
+      "title" : "科技型中小企业纳税总额"
+    },
+    "rd_town" : {
+      "count" : "12",
+      "title" : "创新小镇"
+    },
+    "hot_words" : {
+      "list" : [ {
+        "hot_word" : "产业化",
+        "count" : 153
+      }, {
+        "hot_word" : "南宁",
+        "count" : 97
+      }, {
+        "hot_word" : "新品种",
+        "count" : 66
+      }, {
+        "hot_word" : "生态",
+        "count" : 52
+      }, {
+        "hot_word" : "质押",
+        "count" : 49
+      }, {
+        "hot_word" : "服务平台",
+        "count" : 39
+      }, {
+        "hot_word" : "知识产权",
+        "count" : 39
+      }, {
+        "hot_word" : "栽培技术",
+        "count" : 35
+      }, {
+        "hot_word" : "太阳能",
+        "count" : 30
+      }, {
+        "hot_word" : "标准化",
+        "count" : 23
+      }, {
+        "hot_word" : "管理系统",
+        "count" : 23
+      }, {
+        "hot_word" : "产品研发",
+        "count" : 21
+      }, {
+        "hot_word" : "物联网",
+        "count" : 20
+      }, {
+        "hot_word" : "互联网",
+        "count" : 20
+      }, {
+        "hot_word" : "电子商务",
+        "count" : 16
+      }, {
+        "hot_word" : "自动化",
+        "count" : 13
+      }, {
+        "hot_word" : "医疗",
+        "count" : 12
+      } ],
+      "title" : "科技热词"
+    },
+    "rd_zckj" : {
+      "count" : "27",
+      "title" : "众创空间"
+    },
+    "rd_all_invest" : {
+      "sum" : "57993",
+      "title" : "总科研经费"
+    },
+    "rd_incubation" : {
+      "count" : "48",
+      "title" : "孵化器、众创空间总数"
+    },
+    "rd_lab_cnas" : {
+      "count" : "17",
+      "title" : "国家认可实验室 CNAS"
+    },
+    "zx_count" : {
+      "count" : "449",
+      "title" : "已登记科技型中小企业总数"
+    },
+    "rd_zx_invest" : {
+      "list" : [ {
+        "year" : "2014",
+        "sum" : 1200
+      }, {
+        "year" : "2015",
+        "sum" : 1200
+      }, {
+        "year" : "2016",
+        "sum" : 1305
+      }, {
+        "year" : "2017",
+        "sum" : 1395
+      }, {
+        "year" : "2018",
+        "sum" : 1580
+      }, {
+        "year" : "2019",
+        "sum" : 885
+      } ],
+      "title" : "科技型中小企业技术创新项目经费"
+    },
+    "tech_award" : {
+      "list" : [ {
+        "prize_level" : "南宁市科技奖",
+        "prize_name" : "技术发明奖",
+        "prize" : "1",
+        "count" : 3
+      }, {
+        "prize_level" : "南宁市科技奖",
+        "prize_name" : "技术发明奖",
+        "prize" : "2",
+        "count" : 14
+      }, {
+        "prize_level" : "南宁市科技奖",
+        "prize_name" : "技术发明奖",
+        "prize" : "3",
+        "count" : 19
+      }, {
+        "prize_level" : "南宁市科技奖",
+        "prize_name" : "科技进步奖",
+        "prize" : "1",
+        "count" : 40
+      }, {
+        "prize_level" : "南宁市科技奖",
+        "prize_name" : "科技进步奖",
+        "prize" : "2",
+        "count" : 112
+      }, {
+        "prize_level" : "南宁市科技奖",
+        "prize_name" : "科技进步奖",
+        "prize" : "3",
+        "count" : 220
+      }, {
+        "prize_level" : "南宁市科技奖",
+        "prize_name" : "重大贡献奖",
+        "prize" : "特等",
+        "count" : 4
+      }, {
+        "prize_level" : "国家科技奖",
+        "prize_name" : "科技进步奖",
+        "prize" : "1",
+        "count" : 1
+      }, {
+        "prize_level" : "国家科技奖",
+        "prize_name" : "科技进步奖",
+        "prize" : "2",
+        "count" : 25
+      }, {
+        "prize_level" : "国家科技奖",
+        "prize_name" : "重大贡献奖",
+        "prize" : "特等",
+        "count" : 1
+      }, {
+        "prize_level" : "广西科技奖",
+        "prize_name" : "技术发明奖",
+        "prize" : "1",
+        "count" : 1
+      }, {
+        "prize_level" : "广西科技奖",
+        "prize_name" : "技术发明奖",
+        "prize" : "2",
+        "count" : 16
+      }, {
+        "prize_level" : "广西科技奖",
+        "prize_name" : "技术发明奖",
+        "prize" : "3",
+        "count" : 27
+      }, {
+        "prize_level" : "广西科技奖",
+        "prize_name" : "特别贡献奖",
+        "prize" : "特等",
+        "count" : 4
+      }, {
+        "prize_level" : "广西科技奖",
+        "prize_name" : "科技进步奖",
+        "prize" : "1",
+        "count" : 20
+      }, {
+        "prize_level" : "广西科技奖",
+        "prize_name" : "科技进步奖",
+        "prize" : "2",
+        "count" : 107
+      }, {
+        "prize_level" : "广西科技奖",
+        "prize_name" : "科技进步奖",
+        "prize" : "3",
+        "count" : 181
+      }, {
+        "prize_level" : "广西科技奖",
+        "prize_name" : "自然科学奖",
+        "prize" : "1",
+        "count" : 2
+      }, {
+        "prize_level" : "广西科技奖",
+        "prize_name" : "自然科学奖",
+        "prize" : "2",
+        "count" : 18
+      }, {
+        "prize_level" : "广西科技奖",
+        "prize_name" : "自然科学奖",
+        "prize" : "3",
+        "count" : 23
+      }, {
+        "prize_level" : "广西科技奖",
+        "prize_name" : "自然科学奖",
+        "prize" : "特等",
+        "count" : 1
+      } ],
+      "title" : "科学技术奖励数"
+    },
+    "zx_rd" : {
+      "sum" : "113081",
+      "title" : "科技型中小企业研发费用总额"
+    },
+    "rd_general_project" : {
+      "list" : [ {
+        "year" : "2014",
+        "count" : 304
+      }, {
+        "year" : "2015",
+        "count" : 312
+      }, {
+        "year" : "2016",
+        "count" : 311
+      }, {
+        "year" : "2017",
+        "count" : 131
+      }, {
+        "year" : "2018",
+        "count" : 111
+      }, {
+        "year" : "2019",
+        "count" : 160
+      } ],
+      "title" : "科学研究与技术开发计划项目数"
+    },
+    "gx_count_by_tech" : {
+      "list" : [ {
+        "gx_field_no" : "01.一、电子信息",
+        "count" : 244
+      }, {
+        "gx_field_no" : "02.二、生物与新医药",
+        "count" : 97
+      }, {
+        "gx_field_no" : "03.三、航空航天",
+        "count" : 3
+      }, {
+        "gx_field_no" : "04.四、新材料",
+        "count" : 54
+      }, {
+        "gx_field_no" : "05.五、高技术服务",
+        "count" : 183
+      }, {
+        "gx_field_no" : "06.六、新能源与节能",
+        "count" : 33
+      }, {
+        "gx_field_no" : "07.七、资源与环境",
+        "count" : 65
+      }, {
+        "gx_field_no" : "08.八、先进制造与自动化",
+        "count" : 72
+      } ],
+      "title" : "高新企业按高新技术领域分"
     }
   }
+}

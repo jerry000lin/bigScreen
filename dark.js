@@ -19,7 +19,7 @@
         log('ECharts is not Loaded');
         return;
     }
-    var contrastColor = '#eee';
+    var contrastColor = 'transparent';
     var axisCommon = function () {
         return {
             axisLine: {
@@ -79,7 +79,7 @@
 
     var theme = {
         color: colorPalette,
-        backgroundColor: '#fff',
+        backgroundColor: 'transparent',
         tooltip: {
             axisPointer: {
                 lineStyle: {
