@@ -4,7 +4,7 @@ window.onload = function () {
     const chart3 = setWordCharts(seriesData.word)
     const chart4 = setCostCharts(seriesData.cost)
     const chart5 = setTechCompanyCharts(seriesData.techCompany)
-    const chart6 = setPatentChart(seriesData.patent)
+    let chart6 = setPatentChart(seriesData.patent)
     const chart7 = setInstitutionCharts(seriesData.institution)
     const chart8 = setMapCharts()
 
@@ -14,6 +14,7 @@ window.onload = function () {
         chart3.resize();
         chart4.resize();
         chart5.resize();
+        chart6 = setPatentChart(seriesData.patent)
         chart6.resize();
         chart7.resize();
         chart8.resize();
@@ -24,60 +25,105 @@ function setTechAwardCharts(seriesData) {
     const myChart = echarts.init(document.getElementById("techAward"))
 
     const techAwardOption = {
+        color: ["#05f8d6", "#0082fc", "#fdd845", "#f47a75", "#006599", "#D8E12C"],
         tooltip: {
-            show: true
+            trigger: 'axis',
         },
-        label: {
-            minAngle: 5,
+        grid: {
+            top: 60,
+            bottom: 25
         },
-        series: {
-            type: "sunburst",
-            center: ["50%", "50%"],
-            startAngle: 360,
-            data: seriesData,
-            sort: null,
-            levels: [{}, {
-                r0: "15%",
-                r: "35%",
-
-                itemStyle: {
-                    borderWidth: 0,
-                },
-                label: {
-                    align: "center",
-                    fontSize: 12,
-                    color: '#fff',
-                    textBorderWidth: 0
+        legend: {
+            textStyle: {
+                color: "#fff"
+            },
+            top: 5,
+            right: 20,
+            left: 20,
+            type: "scroll",
+            pageIconColor: "#fff",
+            pageTextStyle: {
+                color: "#fff"
+            }
+        },
+        xAxis: [{
+            type: 'category',
+            data: [
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            axisPointer: {
+                type: 'shadow'
+            },
+            nameTextStyle: {
+                color: '#fff'
+            },
+            axisLabel: {
+                color: "#fff"
+            },
+            axisTick: {
+                alignWithLabel: true
+            },
+            axisLine: {
+                lineStyle: {
+                    color: "#fff"
                 }
-            }, {
-                r0: "37%",
-                r: "72%",
-                itemStyle: {
-                    borderWidth: 0
-                },
-                label: {
-                    position: 'center',
-                    fontSize: 10,
-                    color: '#fff',
-                    textBorderWidth: 0
+            },
+            axisPointer: {
+                shadowStyle: {
+                    color: "#666",
+                    shadowBlur: 5
                 }
-            }, {
-                r0: "74%",
-                r: "80%",
-                itemStyle: {
-                    borderWidth: 0,
-                    borderColor: "transparent"
-                },
-                label: {
-                    position: 'outside',
-                    padding: 3,
-                    fontSize: 12,
-                    color: 'auto',
-                    textBorderWidth: 0,
-                    textBorderColor: "#fff"
+            }
+        }],
+        yAxis: [{
+            type: 'value',
+            name: 'pre',
+            nameTextStyle: {
+                color: '#fff'
+            },
+            axisLabel: {
+                color: "#fff"
+            },
+            axisLine: {
+                lineStyle: {
+                    color: '#5793f3'
                 }
-            }, ]
-        }
+            },
+            splitLine: {
+                lineStyle: {
+                    type: "dotted",
+                    color: "#5793f3",
+                    opacity: 0.5
+                },
+            }
+        }],
+        series: [{
+                name: '国家科技奖',
+                type: 'line',
+                symbol: "diamond",
+                data: [0.11, 0.15, 0.15, 0.07, 0.07, 0.11, 0.07, 0.07, 0.19]
+            },
+            {
+                name: '广西科技奖',
+                type: 'line',
+                symbol: "diamond",
+                data: [0.07, 0.05, 0.08, 0.08, 0.07, 0.06, 0.10, 0.27, 0.24]
+            },
+            {
+                name: '南宁市科技奖',
+                type: 'line',
+                symbol: "diamond",
+                data: [0.09, 0.10, 0.14, 0.12, 0.13, 0.14, 0.14, 0.14]
+            }
+        ]
     };
     myChart.setOption(techAwardOption)
     return myChart;
@@ -86,7 +132,7 @@ function setTechAwardCharts(seriesData) {
 function setHighTechCompanyCharts(seriesData) {
     const myChart = echarts.init(document.getElementById("highTechCompany"))
 
-    option = {
+    const option = {
         color: ["#05f8d6", "#0082fc", "#fdd845", "#22ed7c", "#CDCC00", "#F58B01", "#f47a75", "#009db2", "#024b51", "#0780cf", "#765005​​​​​​​"],
 
         tooltip: {
@@ -102,7 +148,7 @@ function setHighTechCompanyCharts(seriesData) {
             type: "scroll",
             pageIconColor: "#fff",
             pageTextStyle: {
-                color: "#fff"
+                color: "transparent"
             }
         },
         series: [{
@@ -137,15 +183,165 @@ function setHighTechCompanyCharts(seriesData) {
             }
         }]
     };
+
+    const option2 = {
+        color: ["#05f8d6", "#0082fc", "#fdd845", "#f47a75", "#006599", "#D8E12C"],
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#999'
+                }
+            },
+        },
+        grid: {
+            top: 60,
+            bottom: 25
+        },
+        legend: {
+            textStyle: {
+                color: "#fff"
+            },
+            top: 5,
+            x: "center",
+            type: "scroll",
+            pageIconColor: "#fff",
+            pageTextStyle: {
+                color: "#fff"
+            }
+        },
+        xAxis: [{
+            type: 'category',
+            data: ["2016", "2017", "2018"],
+            axisPointer: {
+                type: 'shadow'
+            },
+            nameTextStyle: {
+                color: '#fff'
+            },
+            axisLabel: {
+                color: "#fff"
+            },
+            axisLine: {
+                lineStyle: {
+                    color: "#666"
+                }
+            },
+            axisPointer: {
+                shadowStyle: {
+                    color: "#666",
+                    shadowBlur: 5
+                }
+            }
+        }],
+        yAxis: [{
+                type: 'value',
+                name: '高新企业数量',
+                nameTextStyle: {
+                    color: '#fff'
+                },
+                axisLabel: {
+                    color: "#fff"
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: "#CC3467"
+                    }
+                },
+                splitLine: {
+                    lineStyle: {
+                        color: "#CC3467",
+                        type: "dotted",
+                        opacity: 0.5
+
+                    }
+                },
+                axisPointer: {
+                    shadowStyle: {
+                        color: "#CC3467"
+                    }
+                }
+            },
+            {
+                type: 'value',
+                name: '高新企业增量',
+                nameTextStyle: {
+                    color: '#fff'
+                },
+                axisLabel: {
+                    color: "#fff"
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#5793f3'
+                    }
+                },
+                splitLine: {
+                    lineStyle: {
+                        type: "dotted",
+                        color: "#5793f3",
+                        opacity: 0.5
+                    },
+                }
+            }
+        ],
+        series: [{
+                name: '高新企业数量',
+                type: 'bar',
+                data: [303, 446, 751],
+                itemStyle: {
+                    shadowBlur: 5,
+                    shadowColor: 'rgba(255,255,255, 0.5)'
+                },
+            },
+            {
+                name: '高新企业增量',
+                type: 'line',
+                yAxisIndex: 1,
+                data: [125, 214, 412],
+                lineStyle: {
+                    normal: {
+                        width: 2,
+                        shadowColor: 'rgba(71,216,190, 0.5)',
+                        shadowBlur: 5,
+                        shadowOffsetY: 2
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        borderWidth: 5,
+                    }
+                },
+                symbol: "diamond",
+                smooth: true,
+            }
+        ]
+    }
+
+    let key = 0
     myChart.setOption(option)
+    setInterval(() => {
+        if (key == 0) {
+            myChart.clear()
+            myChart.setOption(option2)
+            key = 1
+        } else {
+            key = 0
+            myChart.clear()
+            myChart.setOption(option)
+        }
+    }, 16000)
 
     let scrollDataIndex = 0
     setInterval(() => {
-        scrollDataIndex = (++scrollDataIndex) % 5
-        myChart.dispatchAction({
-            type: 'legendScroll',
-            scrollDataIndex: scrollDataIndex
-        })
+        if (key == 0) {
+            scrollDataIndex = (++scrollDataIndex) % 5
+            myChart.dispatchAction({
+                type: 'legendScroll',
+                scrollDataIndex: scrollDataIndex
+            })
+        }
     }, 2000);
 
     return myChart
@@ -161,19 +357,19 @@ function setWordCharts(data) {
             left: 0,
             right: 0,
             top: 5,
-            right: 0,
-            width: '95%',
-            height: '95%',
+            bottom: 5,
+            width: '100%',
+            height: '100%',
             gridSize: 10, //值越大，word间的距离越大，单位像素
-            sizeRange: [20, 32], //word的字体大小区间，单位像素
+            sizeRange: [15, 25], //word的字体大小区间，单位像素
             rotationRange: [0, 0], //word的可旋转角度区间
             textStyle: {
                 normal: {
                     color: function () {
                         return 'rgb(' + [
-                            100 + Math.round(Math.random() * 155),
-                            100 + Math.round(Math.random() * 155),
-                            100 + Math.round(Math.random() * 155)
+                            100,
+                            150 + Math.round(Math.random() * 105),
+                            100
                         ].join(',') + ')';
                     },
                     shadowBlur: 2,
@@ -422,7 +618,7 @@ function setTechCompanyCharts(seriesData) {
             type: "scroll",
             pageIconColor: "#fff",
             pageTextStyle: {
-                color: "#fff"
+                color: "transparent"
             }
         },
         series: [{
@@ -728,7 +924,7 @@ function setPatentChart(data) {
             },
             labelLine: {
                 smooth: 0.2,
-                length: 70,
+                length: window.innerHeight / 14,
                 length2: 10
             },
             "data": [{
@@ -821,9 +1017,9 @@ function setInstitutionCharts(data) {
                 show: true,
                 textStyle: {
                     color: '#fff',
-                    fontSize: 12,
+                    fontSize: 11,
                 },
-                position: ['10%', '20%'],
+                position: ['10%', '10%'],
                 formatter: function (params) {
                     var arr = [
                         params.name,
@@ -877,8 +1073,62 @@ function setMapCharts() {
                 emphasis: {
                     areaColor: '#2B91B7',
                 }
-            }
-        }
+            },
+            regions: [{
+                    name: "兴宁区",
+                    itemStyle: {
+                        areaColor: '#2B91B7',
+                    }
+                }, {
+                    name: "青秀区",
+                    itemStyle: {
+                        areaColor: '#2B91B7',
+                    }
+                }, {
+                    name: "江南区",
+                    itemStyle: {
+                        areaColor: '#2B91B7',
+                    }
+                }, {
+                    name: "西乡塘区",
+                    itemStyle: {
+                        areaColor: '#2B91B7',
+                    }
+                }, {
+                    name: "良庆区",
+                    itemStyle: {
+                        areaColor: '#2B91B7',
+                    }
+                }, {
+                    name: "邕宁区",
+                    itemStyle: {
+                        areaColor: '#2B91B7',
+                    }
+                },
+                {
+                    name: "武鸣区",
+                    itemStyle: {
+                        areaColor: '#2B91B7',
+                    }
+                },
+                {
+                    name: "隆安县",
+                },
+                {
+                    name: "马山县",
+                },
+                {
+                    name: "上林县",
+                },
+                {
+                    name: "宾阳县",
+                },
+                {
+                    name: "横县"
+                },
+            ]
+        },
+
     };
     mapChart.setOption(mapChartOpt);
     return mapChart

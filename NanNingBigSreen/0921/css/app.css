@@ -15,6 +15,19 @@ body {
     margin: 0 auto;
     min-width: 375px;
     max-width: 1920px;
+    width: 100%;
+    height: 100%;
+}
+
+.background-image {
+    opacity: 0.3;
+    position: absolute;
+    background: url("../img/background.png") no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 /********** Layout **********/
@@ -82,7 +95,8 @@ body {
 .col-l {
     -webkit-flex: 2;
     -ms-flex: 2;
-    flex: 2
+    flex: 2;
+    min-width: 410px;
 }
 
 .col-c {
@@ -95,6 +109,7 @@ body {
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
+    min-width: 410px;
 }
 
 /* PC */
@@ -243,7 +258,7 @@ body {
     flex: 1;
     text-align: center;
     background: rgba(0, 123, 255, 0.1);
-    margin: 10px;
+    margin: 5px;
 }
 
 .infoBanner>.info-contanier>div {
@@ -259,8 +274,8 @@ body {
 .infoBanner-bottom {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 101px;
+    width: 101%;
+    height: 80px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -275,15 +290,17 @@ body {
     -ms-flex: 1;
     flex: 1;
     text-align: center;
+    margin-right: 8px;
     border-style: solid;
-    border-width: 10px 20px 20px;
-    border-image: url(../img/chart-wrapper.png) 10 20 20 fill / 1 / 0 repeat;
+    padding-right: 3px;
+    border-width: 5px 10px 10px;
+    border-image: url(../img/chart-wrapper.png) 5 10 10 fill / 1 / 0 repeat;
 }
 
 
 
 .infoBanner-bottom>.info-contanier>div.bottom-num {
-    font-size: 24px;
+    font-size: 16px;
     color: aqua;
 }
 
@@ -296,7 +313,7 @@ body {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    bottom: 110px;
+    bottom: 80px;
     width: 100%;
 }
 
@@ -325,7 +342,8 @@ body {
 .mapChart {
     -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 1
+    flex: 1;
+    height: 100%;
 }
 
 /* window */
@@ -340,14 +358,15 @@ body {
     .infoBanner-bottom>.info-contanier>div {
         height: 32px;
         line-height: 32px;
-        font-size: 18px;
+        font-size: 16px;
     }
+
     .map-main-left {
         height: 100%;
-        width: 300px;
+        width: 170px;
         position: relative;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
@@ -365,12 +384,13 @@ body {
         line-height: 32px;
         font-size: 12px;
     }
+
     .map-main-left {
         height: 100%;
-        width: 180px;
+        width: 130px;
         position: relative;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 12px;
         white-space: nowrap;
     }
 }
